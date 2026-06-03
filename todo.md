@@ -29,7 +29,7 @@ alle bilder als **png**, ablegen in `/resources/images/`.
 
 #### hero
 - [ ] **tagline**: ein kurzer punchiger satz über dich (1 satz)
-- [ ] **stat-werte**: anpassen, umbenennen, hinzufügen oder entfernen
+- [x] **stat-werte**: anpassen, umbenennen, hinzufügen oder entfernen
 
 #### über mich
 - [ ] **erster absatz**: wer du bist, was dich antreibt (4-5 sätze)
