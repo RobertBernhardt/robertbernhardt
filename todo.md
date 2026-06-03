@@ -1,4 +1,4 @@
-# todo — robert bernhardt personal page
+# todo — robert bernhardt personal page (v2)
 
 ## bilder die du brauchst
 
@@ -6,63 +6,86 @@ alle bilder als **png**, ablegen in `/resources/images/`.
 
 | dateiname | format / größe | beschreibung |
 |---|---|---|
-| `portrait.png` | portrait, ca. 640×840px | dein hauptbild für die hero-sektion. character-select-vibes — also kein steifes bewerbungsfoto, eher was mit persönlichkeit. gut ausgeleuchtet, vor neutralem oder dunklem hintergrund, am besten stehend oder ab brust aufwärts. gerne mit etwas drip. |
-| `startup-1.png` | landscape, ca. 800×500px | bild für das erste startup. kann ein screenshot der app sein, ein foto vom team, ein whiteboard-moment, whatever du hast. wenn du nichts hast, ein bild das die branche oder das problem repräsentiert. |
-| `startup-2.png` | landscape, ca. 800×500px | bild für das zweite startup. gleiche logik wie oben — irgendwas visuelles das die sache greifbar macht. |
-| `projekt-1.png` | landscape, ca. 800×500px | bild für das erste projekt. screenshot, foto, oder was auch immer das projekt am besten zeigt. |
+| `portrait.png` | portrait, ca. 640×840px | dein hauptbild für die hero-sektion. character-select-vibes — kein steifes bewerbungsfoto, eher was mit persönlichkeit. gut ausgeleuchtet, vor neutralem oder dunklem hintergrund. |
+| `startup-1.png` | landscape, ca. 800×500px | bild für das erste startup. screenshot der app, foto vom team, whiteboard, whatever du hast. |
+| `startup-2.png` | landscape, ca. 800×500px | bild für das zweite startup. |
+| `projekt-1.png` | landscape, ca. 800×500px | bild für das erste projekt. |
 | `projekt-2.png` | landscape, ca. 800×500px | bild für das zweite projekt. |
 | `projekt-3.png` | landscape, ca. 800×500px | bild für das dritte projekt. |
-| `book-cover-1.png` | portrait, ca. 400×570px | cover des ersten buchs. wenn du das cover hast, einfach als png abspeichern. |
+| `book-cover-1.png` | portrait, ca. 400×570px | cover des ersten buchs. |
 | `book-cover-2.png` | portrait, ca. 400×570px | cover des zweiten buchs. |
 | `book-cover-3.png` | portrait, ca. 400×570px | cover des dritten buchs. |
 | `book-cover-4.png` | portrait, ca. 400×570px | cover des vierten buchs. |
 
-> **tipp**: falls du für startups/projekte keine fotos hast, können wir bilder generieren die das thema/die branche symbolisieren — sag mir einfach was die themen sind.
+> **tipp**: falls du für startups/projekte keine fotos hast, können wir bilder generieren die das thema symbolisieren — sag mir einfach was die themen sind.
+
+> **bilder in modals**: wenn du für einzelne modals zusätzliche bilder willst (z.b. screenshots, fotos, diagramme) — einfach in die json-daten in index.html einpflegen. die modals unterstützen bild-galerien.
 
 ---
 
 ## inhalte die du ersetzen musst
 
-alles was in den html-kommentaren mit `<!-- PLACEHOLDER: ... -->` markiert ist, muss mit deinem echten text ersetzt werden. hier die übersicht:
+### in index.html direkt:
 
-### hero
-- [ ] **tagline**: ein kurzer, punchiger satz der sagt wer du bist. lustig, ehrlich, nicht cringe. (1 satz)
-- [ ] **stat-werte**: die prozentwerte der stat-bars anpassen — aktuell sind es kreativität (92%), unternehmergeist (85%), durchhaltevermögen (78%), realismus (45%), geschmack (95%). anpassen, umbennen, hinzufügen oder entfernen wie du willst.
+#### hero
+- [ ] **tagline**: ein kurzer punchiger satz über dich (1 satz)
+- [ ] **stat-werte**: anpassen, umbenennen, hinzufügen oder entfernen
 
-### über mich
-- [ ] **erster absatz**: wer du bist, was dich antreibt. so wie du reden würdest. (4-5 sätze)
-- [ ] **motto/highlight**: ein satz der deine philosophie einfängt. kein linkedin-zeug. (1 satz)
-- [ ] **zweiter absatz**: was dich anders macht, dein ansatz, warum konventionell nicht funktioniert. (3-4 sätze)
+#### über mich
+- [ ] **erster absatz**: wer du bist, was dich antreibt (4-5 sätze)
+- [ ] **motto**: dein persönliches motto (1 satz)
+- [ ] **zweiter absatz**: was dich anders macht (3-4 sätze)
 
-### startups
-- [ ] **startup 1**: name, jahreszahlen, problem (2-3 sätze), dein ansatz (2-3 sätze), was passiert ist (1-2 sätze)
-- [ ] **startup 2**: name, jahreszahlen, problem (2-3 sätze), dein ansatz (2-3 sätze), was passiert ist (1-2 sätze)
+#### das kann ich
+- [ ] **fähigkeiten 1-6**: je titel + 1 satz beschreibung + level (1-5 dots)
+- [ ] du kannst beliebig viele skill-items hinzufügen oder entfernen (einfach den `<div class="skill-item reveal">` block kopieren)
 
-### projekte
-- [ ] **projekt 1**: name, ausgangslage (2-3 sätze), was du gemacht hast (2-3 sätze)
-- [ ] **projekt 2**: name, ausgangslage (2-3 sätze), was du gemacht hast (2-3 sätze)
-- [ ] **projekt 3**: name, ausgangslage (2-3 sätze), was du gemacht hast (2-3 sätze)
+#### startups (nur teaser auf der karte)
+- [ ] **startup 1**: name, jahreszahlen, 1 satz teaser
+- [ ] **startup 2**: name, jahreszahlen, 1 satz teaser
 
-> **hinweis**: wenn du mehr oder weniger als 3 projekte brauchst, sag bescheid — lässt sich leicht anpassen.
+#### projekte (nur teaser auf der karte)
+- [ ] **projekt 1-3**: je name + 1 satz teaser
+- [ ] du kannst beliebig viele cards hinzufügen (block kopieren + neuen `data-modal` key vergeben)
 
-### bücher
-- [ ] **buch 1**: titel, genre/kategorie, beschreibung (2-3 sätze)
-- [ ] **buch 2**: titel, genre/kategorie, beschreibung (2-3 sätze)
-- [ ] **buch 3**: titel, genre/kategorie, beschreibung (2-3 sätze)
-- [ ] **buch 4**: titel, genre/kategorie, beschreibung (2-3 sätze)
+#### bücher (nur cover + titel auf der karte)
+- [ ] **buch 1-4**: je titel + genre
 
-### was mich interessiert
-- [ ] **interesse 1-6**: jeweils titel + ein absatz (3-4 sätze) der erklärt warum dich das thema fasziniert. wenn du weniger oder mehr als 6 brauchst, kein problem.
-- [ ] **icons**: die `◆` symbole bei den interessen mit passenden emojis ersetzen (z.b. 🧠, 🎨, 📐, 🌍, etc.)
+#### interessen (nur teaser auf der kachel)
+- [ ] **interesse 1-6**: je titel + icon (emoji) + 1 satz teaser
+
+### in der JSON-daten sektion (`<script id="modal-data">`):
+
+hier liegt der **tiefe content** für die modals. jeder key (z.b. `"startup-1"`) muss zum `data-modal` attribut auf der karte passen.
+
+#### startups
+- [ ] **startup 1**: problem (2-3 sätze), dein ansatz (2-3 sätze), was passiert ist (1-2 sätze)
+- [ ] **startup 2**: gleiche struktur
+
+#### projekte
+- [ ] **projekt 1-3**: je ausgangslage (2-3 sätze) + was du gemacht hast (2-3 sätze)
+
+#### bücher
+- [ ] **buch 1-4**: je genre + worum es geht (3-4 sätze)
+
+#### interessen
+- [ ] **interesse 1-6**: je warum dich das fasziniert (3-4 sätze)
+
+> **hinweis**: um ein neues item hinzuzufügen:
+> 1. card/kachel in HTML kopieren → neuen `data-modal="mein-key"` vergeben
+> 2. passenden eintrag in der JSON-sektion hinzufügen mit dem gleichen key
+> 3. fertig — das modal wird automatisch generiert
+
+---
 
 ### footer
 - [ ] **e-mail link**: deine echte e-mail adresse
 - [ ] **linkedin link**: dein linkedin-profil url
-- [ ] **github link**: dein github-profil url (oder entfernen wenn nicht gewünscht)
+- [ ] **github link**: dein github-profil url (oder entfernen)
 
 ---
 
 ## sonstiges
-- [ ] favicons erstellen (kann ich dann machen wenn wir soweit sind)
-- [ ] open graph meta tags ergänzen (für social media previews)
+- [ ] favicons erstellen
+- [ ] open graph meta tags ergänzen
 - [ ] später: englische version + geo-based language switch

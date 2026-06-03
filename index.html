@@ -11,51 +11,54 @@
 
   <!-- ======== NAVIGATION ======== -->
   <nav class="nav" id="main-nav">
-    <a href="#hero" class="nav__link active" data-section="hero">start</a>
-    <a href="#ueber-mich" class="nav__link" data-section="ueber-mich">über mich</a>
-    <a href="#startups" class="nav__link" data-section="startups">startups</a>
-    <a href="#projekte" class="nav__link" data-section="projekte">projekte</a>
-    <a href="#buecher" class="nav__link" data-section="buecher">bücher</a>
-    <a href="#interessen" class="nav__link" data-section="interessen">was mich interessiert</a>
+    <a href="#hero" class="nav__brand" aria-label="zum anfang">rb</a>
+    <div class="nav__links" id="nav-links">
+      <a href="#ueber-mich" class="nav__link" data-section="ueber-mich">über mich</a>
+      <a href="#skills" class="nav__link" data-section="skills">das kann ich</a>
+      <a href="#startups" class="nav__link" data-section="startups">startups</a>
+      <a href="#projekte" class="nav__link" data-section="projekte">projekte</a>
+      <a href="#buecher" class="nav__link" data-section="buecher">bücher</a>
+      <a href="#interessen" class="nav__link" data-section="interessen">interessen</a>
+    </div>
+    <button class="nav__burger" id="nav-burger" aria-label="menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <!-- ======== HERO — CHARACTER SELECT ======== -->
+  <!-- ======== HERO ======== -->
   <section class="hero" id="hero">
     <div class="hero__portrait-frame">
-      <!-- TODO: replace with real portrait -->
-      <div class="hero__portrait placeholder-img" id="hero-portrait">
-        [ portrait ]
-      </div>
+      <!-- TODO: replace with portrait.png -->
+      <div class="hero__portrait placeholder-img" id="hero-portrait">[ portrait ]</div>
     </div>
 
     <h1 class="hero__name">robert bernhardt</h1>
 
     <p class="hero__tagline">
-      <!-- PLACEHOLDER: a short punchy one-liner that captures your vibe — something like "ideas person who keeps building things nobody asked for" -->
+      <!-- PLACEHOLDER: ein kurzer punchiger satz — wer du bist, was du machst, dein vibe in einem satz. witzig und ehrlich. -->
       hier steht ein kurzer satz der beschreibt wer du bist und was dich antreibt, irgendwas witziges und ehrliches halt
     </p>
 
-    <!-- character stats — video game style -->
     <div class="hero__stats">
       <div class="stat">
-        <span class="stat__label">kreativität</span>
-        <div class="stat__bar"><div class="stat__fill" data-width="92"></div></div>
+        <span class="stat__label">neurotizismus</span>
+        <div class="stat__bar"><div class="stat__fill" data-width="0"></div></div>
       </div>
       <div class="stat">
-        <span class="stat__label">unternehmergeist</span>
-        <div class="stat__bar"><div class="stat__fill" data-width="85"></div></div>
+        <span class="stat__label">verträglichkeit</span>
+        <div class="stat__bar"><div class="stat__fill" data-width="5"></div></div>
       </div>
       <div class="stat">
-        <span class="stat__label">durchhaltevermögen</span>
-        <div class="stat__bar"><div class="stat__fill" data-width="78"></div></div>
+        <span class="stat__label">extraversion</span>
+        <div class="stat__bar"><div class="stat__fill" data-width="30"></div></div>
       </div>
       <div class="stat">
-        <span class="stat__label">realismus</span>
-        <div class="stat__bar"><div class="stat__fill" data-width="45"></div></div>
+        <span class="stat__label">gewissenhaftigkeit</span>
+        <div class="stat__bar"><div class="stat__fill" data-width="80"></div></div>
       </div>
       <div class="stat">
-        <span class="stat__label">geschmack</span>
-        <div class="stat__bar"><div class="stat__fill" data-width="95"></div></div>
+        <span class="stat__label">offenheit</span>
+        <div class="stat__bar"><div class="stat__fill" data-width="80"></div></div>
       </div>
     </div>
 
@@ -65,27 +68,27 @@
   </section>
 
   <!-- ======== ÜBER MICH ======== -->
-  <section class="section section--alt" id="ueber-mich">
-    <div class="section__header reveal">
-      <h2 class="section__title">über mich</h2>
-      <p class="section__subtitle">das wichtigste in kürze, ohne langweiligen lebenslauf</p>
-      <div class="deco-fan"></div>
-    </div>
+  <section class="section section--ueber-mich" id="ueber-mich">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <h2 class="section__title">über mich</h2>
+        <p class="section__subtitle">das wichtigste in kürze, ohne langweiligen lebenslauf</p>
+        <div class="deco-fan"></div>
+      </div>
 
-    <div class="about reveal">
-      <div class="about__content">
+      <div class="about__content reveal">
         <div class="about__text">
-          <!-- PLACEHOLDER: first paragraph — who you are in your own words. what drives you, what makes you tick, what you've been doing with your life. write like you're talking to someone at a bar who asked "so what do you do?" — honest, slightly self-deprecating, but confident. ~4-5 sentences. -->
+          <!-- PLACEHOLDER: erster absatz — wer du bist in deinen eigenen worten. was treibt dich an, was machst du, warum stehst du morgens auf. schreib wie du auf einer party reden würdest. ~4-5 sätze. -->
           <p>
             hier kommt der erste absatz über dich. wer bist du, was treibt dich an, was hast du so gemacht in deinem leben, und warum stehst du morgens auf. schreib so wie du reden würdest wenn dich jemand auf einer party fragt was du eigentlich machst. ehrlich, ein bisschen selbstironisch, aber mit dem selbstbewusstsein dass du weisst was du kannst. das hier sind ungefähr vier bis fünf sätze und ja das ist die richtige länge.
           </p>
 
           <div class="about__highlight">
-            <!-- PLACEHOLDER: your personal motto or a sentence that captures your philosophy — something genuine, not some linkedin hustle quote -->
+            <!-- PLACEHOLDER: dein persönliches motto oder ein satz der deine philosophie einfängt — was du wirklich denkst, kein linkedin schmalz -->
             hier steht dein persönliches motto oder ein satz der deine philosophie einfängt, kein linkedin schmalz sondern was du wirklich denkst
           </div>
 
-          <!-- PLACEHOLDER: second paragraph — what makes you different. your approach, your way of thinking, what people tend to say about you. maybe why conventional career paths never quite worked. ~3-4 sentences. -->
+          <!-- PLACEHOLDER: zweiter absatz — was dich anders macht. dein ansatz, warum normale karrierewege nie für dich funktionierten. ~3-4 sätze. -->
           <p>
             und hier kommt der zweite absatz darüber was dich anders macht. dein ansatz, deine art zu denken, was leute über dich sagen. vielleicht auch warum die normalen karrierewege nie so richtig für dich funktioniert haben. das sind so drei bis vier sätze und es fühlt sich richtig an.
           </p>
@@ -94,313 +97,309 @@
     </div>
   </section>
 
-  <!-- ======== STARTUPS ======== -->
-  <section class="section" id="startups">
-    <div class="section__header reveal">
-      <h2 class="section__title">startups</h2>
-      <p class="section__subtitle">zwei versuche, die welt zu verändern. die welt hat sich gewehrt.</p>
-      <div class="deco-fan"></div>
+  <!-- ======== DAS KANN ICH ======== -->
+  <section class="section section--skills" id="skills">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <h2 class="section__title">das kann ich</h2>
+        <p class="section__subtitle">fähigkeiten, werkzeuge und sachen die ich wirklich gut kann</p>
+        <div class="deco-fan"></div>
+      </div>
+
+      <div class="skills-grid reveal-stagger">
+
+        <!-- SKILL 1 — just copy & paste this block to add more -->
+        <div class="skill-item reveal">
+          <!-- PLACEHOLDER: titel der fähigkeit — z.b. "produktdesign", "strategisches denken", etc. -->
+          <h3 class="skill-item__title">Erste Fähigkeit</h3>
+          <!-- PLACEHOLDER: 1 satz — was du damit machst und warum du gut darin bist -->
+          <p class="skill-item__desc">hier steht ein kurzer satz was diese fähigkeit ist und warum du gut darin bist</p>
+          <!-- level: 1-5 dots, class "filled" = filled -->
+          <div class="skill-item__level">
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot"></span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <h3 class="skill-item__title">Zweite Fähigkeit</h3>
+          <p class="skill-item__desc">hier steht ein kurzer satz was diese fähigkeit ist und warum du gut darin bist</p>
+          <div class="skill-item__level">
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <h3 class="skill-item__title">Dritte Fähigkeit</h3>
+          <p class="skill-item__desc">hier steht ein kurzer satz was diese fähigkeit ist und warum du gut darin bist</p>
+          <div class="skill-item__level">
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot"></span>
+            <span class="skill-item__dot"></span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <h3 class="skill-item__title">Vierte Fähigkeit</h3>
+          <p class="skill-item__desc">hier steht ein kurzer satz was diese fähigkeit ist und warum du gut darin bist</p>
+          <div class="skill-item__level">
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot"></span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <h3 class="skill-item__title">Fünfte Fähigkeit</h3>
+          <p class="skill-item__desc">hier steht ein kurzer satz was diese fähigkeit ist und warum du gut darin bist</p>
+          <div class="skill-item__level">
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+          </div>
+        </div>
+
+        <div class="skill-item reveal">
+          <h3 class="skill-item__title">Sechste Fähigkeit</h3>
+          <p class="skill-item__desc">hier steht ein kurzer satz was diese fähigkeit ist und warum du gut darin bist</p>
+          <div class="skill-item__level">
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot filled"></span>
+            <span class="skill-item__dot"></span>
+            <span class="skill-item__dot"></span>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="card-grid reveal-stagger">
-
-      <!-- STARTUP 1 -->
-      <div class="card reveal" id="startup-1">
-        <span class="deco-corner deco-corner--tl"></span>
-        <span class="deco-corner deco-corner--tr"></span>
-        <div class="card__image-wrap">
-          <!-- TODO: replace with real image -->
-          <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ startup 1 bild ]</div>
-        </div>
-        <div class="card__body">
-          <!-- PLACEHOLDER: label — something like "startup #1" or the year range -->
-          <span class="card__label">startup nº 1 · 20xx–20xx</span>
-          <!-- PLACEHOLDER: name of the startup — the actual name -->
-          <h3 class="card__title">Name des ersten Startups</h3>
-
-          <div class="card__problem">
-            <span class="card__problem-label">das problem</span>
-            <!-- PLACEHOLDER: describe the problem your startup tried to solve in 2-3 sentences. what was broken, what frustrated you, what did you see that others didn't. -->
-            hier beschreibst du das problem das dein startup lösen wollte. was war kaputt, was hat dich genervt, was hast du gesehen was andere nicht gesehen haben. zwei bis drei sätze die das ding auf den punkt bringen.
-          </div>
-
-          <div class="card__solution">
-            <span class="card__solution-label">mein ansatz</span>
-            <!-- PLACEHOLDER: describe your solution and approach in 2-3 sentences. what was clever about it, what made it unique. -->
-            hier beschreibst du deine lösung und deinen ansatz. was war clever daran, was hat es einzigartig gemacht. zwei bis drei sätze die zeigen wie du an das problem rangegangen bist und was du anders gemacht hast.
-          </div>
-
-          <!-- PLACEHOLDER: 1-2 sentences about what happened, what you learned. honest, not bitter. -->
-          <p class="card__desc">
-            und hier steht was passiert ist und was du daraus gelernt hast. ehrlich, nicht verbittert, einfach die wahrheit. ein bis zwei sätze.
-          </p>
-        </div>
-        <span class="deco-corner deco-corner--bl"></span>
-        <span class="deco-corner deco-corner--br"></span>
+  <!-- ======== STARTUPS ======== -->
+  <section class="section section--startups" id="startups">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <h2 class="section__title">startups</h2>
+        <p class="section__subtitle">zwei versuche, die welt zu verändern. die welt hat sich gewehrt.</p>
+        <div class="deco-fan"></div>
       </div>
 
-      <!-- STARTUP 2 -->
-      <div class="card reveal" id="startup-2">
-        <span class="deco-corner deco-corner--tl"></span>
-        <span class="deco-corner deco-corner--tr"></span>
-        <div class="card__image-wrap">
-          <!-- TODO: replace with real image -->
-          <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ startup 2 bild ]</div>
-        </div>
-        <div class="card__body">
-          <span class="card__label">startup nº 2 · 20xx–20xx</span>
-          <h3 class="card__title">Name des zweiten Startups</h3>
+      <div class="card-grid reveal-stagger">
 
-          <div class="card__problem">
-            <span class="card__problem-label">das problem</span>
-            <!-- PLACEHOLDER: describe the problem your second startup tried to solve in 2-3 sentences. -->
-            hier beschreibst du das problem das dein zweites startup lösen wollte. was war die situation, was hat nicht funktioniert im markt, was hat dich dazu gebracht das ganze anzugehen. zwei bis drei sätze.
+        <!-- STARTUP 1 — card is the preview, data-modal links to the modal content below -->
+        <div class="card reveal" data-modal="startup-1">
+          <span class="deco-corner deco-corner--tl"></span>
+          <span class="deco-corner deco-corner--tr"></span>
+          <div class="card__image-wrap">
+            <!-- TODO: replace with startup-1.png -->
+            <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ startup 1 bild ]</div>
           </div>
-
-          <div class="card__solution">
-            <span class="card__solution-label">mein ansatz</span>
-            <!-- PLACEHOLDER: describe your solution and approach in 2-3 sentences. -->
-            hier beschreibst du deine lösung und deinen ansatz beim zweiten startup. was war die idee, wie wolltest du das umsetzen, und was war der kern der innovation. zwei bis drei sätze.
+          <div class="card__body">
+            <span class="card__label">startup nº 1 · 20xx–20xx</span>
+            <!-- PLACEHOLDER: name des startups -->
+            <h3 class="card__title">Name des ersten Startups</h3>
+            <!-- PLACEHOLDER: 1 satz — worum ging es, ganz kurz -->
+            <p class="card__teaser">ein satz der kurz beschreibt worum es bei diesem startup ging und was die grundidee war, nicht mehr nicht weniger</p>
+            <span class="card__cta">mehr erfahren</span>
           </div>
-
-          <p class="card__desc">
-            <!-- PLACEHOLDER: 1-2 sentences about what happened and what you learned. -->
-            und hier steht was passiert ist und was du gelernt hast. vielleicht auch was du heute anders machen würdest. ein bis zwei sätze, ehrlich und reflektiert.
-          </p>
+          <span class="deco-corner deco-corner--bl"></span>
+          <span class="deco-corner deco-corner--br"></span>
         </div>
-        <span class="deco-corner deco-corner--bl"></span>
-        <span class="deco-corner deco-corner--br"></span>
+
+        <!-- STARTUP 2 -->
+        <div class="card reveal" data-modal="startup-2">
+          <span class="deco-corner deco-corner--tl"></span>
+          <span class="deco-corner deco-corner--tr"></span>
+          <div class="card__image-wrap">
+            <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ startup 2 bild ]</div>
+          </div>
+          <div class="card__body">
+            <span class="card__label">startup nº 2 · 20xx–20xx</span>
+            <h3 class="card__title">Name des zweiten Startups</h3>
+            <p class="card__teaser">ein satz der kurz beschreibt worum es bei diesem startup ging und was die grundidee war, nicht mehr nicht weniger</p>
+            <span class="card__cta">mehr erfahren</span>
+          </div>
+          <span class="deco-corner deco-corner--bl"></span>
+          <span class="deco-corner deco-corner--br"></span>
+        </div>
+
       </div>
-
     </div>
   </section>
 
   <!-- ======== PROJEKTE ======== -->
-  <section class="section section--alt" id="projekte">
-    <div class="section__header reveal">
-      <h2 class="section__title">projekte</h2>
-      <p class="section__subtitle">nebenprojekte, lösungen und sachen die ich einfach cool fand</p>
-      <div class="deco-fan"></div>
-    </div>
-
-    <div class="card-grid reveal-stagger">
-
-      <!-- PROJECT 1 -->
-      <div class="card reveal" id="project-1">
-        <span class="deco-corner deco-corner--tl"></span>
-        <span class="deco-corner deco-corner--tr"></span>
-        <div class="card__image-wrap">
-          <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ projekt 1 bild ]</div>
-        </div>
-        <div class="card__body">
-          <span class="card__label">projekt</span>
-          <!-- PLACEHOLDER: project title -->
-          <h3 class="card__title">Name des ersten Projekts</h3>
-
-          <div class="card__problem">
-            <span class="card__problem-label">die ausgangslage</span>
-            <!-- PLACEHOLDER: 2-3 sentences — what problem or challenge was there, what bugged you, what opportunity did you see. -->
-            hier beschreibst du die ausgangslage. was war das problem oder die herausforderung, was hat dich gestört, welche gelegenheit hast du gesehen. zwei bis drei sätze die den kontext geben, so dass man versteht warum das projekt nötig war.
-          </div>
-
-          <div class="card__solution">
-            <span class="card__solution-label">was ich gemacht habe</span>
-            <!-- PLACEHOLDER: 2-3 sentences — your solution, what was creative or smart about it. -->
-            hier beschreibst du was du gemacht hast. deine lösung, was kreativ oder clever daran war. zwei bis drei sätze die zeigen wie du das problem angegangen bist und was dabei rausgekommen ist.
-          </div>
-        </div>
-        <span class="deco-corner deco-corner--bl"></span>
-        <span class="deco-corner deco-corner--br"></span>
+  <section class="section section--projekte" id="projekte">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <h2 class="section__title">projekte</h2>
+        <p class="section__subtitle">nebenprojekte, lösungen und sachen die ich einfach cool fand</p>
+        <div class="deco-fan"></div>
       </div>
 
-      <!-- PROJECT 2 -->
-      <div class="card reveal" id="project-2">
-        <span class="deco-corner deco-corner--tl"></span>
-        <span class="deco-corner deco-corner--tr"></span>
-        <div class="card__image-wrap">
-          <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ projekt 2 bild ]</div>
-        </div>
-        <div class="card__body">
-          <span class="card__label">projekt</span>
-          <h3 class="card__title">Name des zweiten Projekts</h3>
+      <div class="card-grid reveal-stagger">
 
-          <div class="card__problem">
-            <span class="card__problem-label">die ausgangslage</span>
-            <!-- PLACEHOLDER: 2-3 sentences about the problem/challenge. -->
-            hier beschreibst du die ausgangslage für das zweite projekt. was war los, was musste sich ändern, was hat gefehlt. zwei bis drei sätze fürs verständnis des kontexts, nicht zu viel, nicht zu wenig.
+        <div class="card reveal" data-modal="project-1">
+          <span class="deco-corner deco-corner--tl"></span>
+          <span class="deco-corner deco-corner--tr"></span>
+          <div class="card__image-wrap">
+            <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ projekt 1 bild ]</div>
           </div>
-
-          <div class="card__solution">
-            <span class="card__solution-label">was ich gemacht habe</span>
-            <!-- PLACEHOLDER: 2-3 sentences about your approach and solution. -->
-            hier beschreibst du deine lösung für das zweite projekt. was hast du gebaut, designt oder umgesetzt. was war dein ansatz und was hat es besonders gemacht. zwei bis drei sätze und dann war's das.
+          <div class="card__body">
+            <span class="card__label">projekt</span>
+            <h3 class="card__title">Name des ersten Projekts</h3>
+            <p class="card__teaser">ein satz der kurz beschreibt worum es bei diesem projekt ging und was das ergebnis war, knapp und klar</p>
+            <span class="card__cta">mehr erfahren</span>
           </div>
+          <span class="deco-corner deco-corner--bl"></span>
+          <span class="deco-corner deco-corner--br"></span>
         </div>
-        <span class="deco-corner deco-corner--bl"></span>
-        <span class="deco-corner deco-corner--br"></span>
+
+        <div class="card reveal" data-modal="project-2">
+          <span class="deco-corner deco-corner--tl"></span>
+          <span class="deco-corner deco-corner--tr"></span>
+          <div class="card__image-wrap">
+            <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ projekt 2 bild ]</div>
+          </div>
+          <div class="card__body">
+            <span class="card__label">projekt</span>
+            <h3 class="card__title">Name des zweiten Projekts</h3>
+            <p class="card__teaser">ein satz der kurz beschreibt worum es bei diesem projekt ging und was das ergebnis war, knapp und klar</p>
+            <span class="card__cta">mehr erfahren</span>
+          </div>
+          <span class="deco-corner deco-corner--bl"></span>
+          <span class="deco-corner deco-corner--br"></span>
+        </div>
+
+        <div class="card reveal" data-modal="project-3">
+          <span class="deco-corner deco-corner--tl"></span>
+          <span class="deco-corner deco-corner--tr"></span>
+          <div class="card__image-wrap">
+            <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ projekt 3 bild ]</div>
+          </div>
+          <div class="card__body">
+            <span class="card__label">projekt</span>
+            <h3 class="card__title">Name des dritten Projekts</h3>
+            <p class="card__teaser">ein satz der kurz beschreibt worum es bei diesem projekt ging und was das ergebnis war, knapp und klar</p>
+            <span class="card__cta">mehr erfahren</span>
+          </div>
+          <span class="deco-corner deco-corner--bl"></span>
+          <span class="deco-corner deco-corner--br"></span>
+        </div>
+
       </div>
-
-      <!-- PROJECT 3 -->
-      <div class="card reveal" id="project-3">
-        <span class="deco-corner deco-corner--tl"></span>
-        <span class="deco-corner deco-corner--tr"></span>
-        <div class="card__image-wrap">
-          <div class="card__image placeholder-img" style="aspect-ratio:16/10;">[ projekt 3 bild ]</div>
-        </div>
-        <div class="card__body">
-          <span class="card__label">projekt</span>
-          <h3 class="card__title">Name des dritten Projekts</h3>
-
-          <div class="card__problem">
-            <span class="card__problem-label">die ausgangslage</span>
-            <!-- PLACEHOLDER: 2-3 sentences about the problem/challenge. -->
-            hier beschreibst du die ausgangslage für das dritte projekt. was lag im argen, was hat gefehlt, was wolltest du besser machen. zwei bis drei sätze die zeigen wo du angesetzt hast und warum es wichtig war.
-          </div>
-
-          <div class="card__solution">
-            <span class="card__solution-label">was ich gemacht habe</span>
-            <!-- PLACEHOLDER: 2-3 sentences about your approach and solution. -->
-            hier beschreibst du was du beim dritten projekt gemacht hast. dein ansatz, deine lösung, und was am ende dabei rauskam. zwei bis drei sätze, konkret und auf den punkt gebracht, ohne zu viel blabla.
-          </div>
-        </div>
-        <span class="deco-corner deco-corner--bl"></span>
-        <span class="deco-corner deco-corner--br"></span>
-      </div>
-
     </div>
   </section>
 
   <!-- ======== BÜCHER ======== -->
-  <section class="section" id="buecher">
-    <div class="section__header reveal">
-      <h2 class="section__title">bücher</h2>
-      <p class="section__subtitle">vier bücher geschrieben. lesekreise wurden nicht gegründet.</p>
-      <div class="deco-fan"></div>
-    </div>
-
-    <div class="book-grid reveal-stagger">
-
-      <!-- BOOK 1 -->
-      <div class="book-card reveal" id="book-1">
-        <div class="book-card__cover-wrap">
-          <!-- TODO: replace with real cover -->
-          <div class="book-card__cover placeholder-img">[ cover 1 ]</div>
-        </div>
-        <!-- PLACEHOLDER: book title — the actual title -->
-        <h3 class="book-card__title">Titel des ersten Buchs</h3>
-        <!-- PLACEHOLDER: genre/category of the book -->
-        <span class="book-card__genre">genre / kategorie</span>
-        <!-- PLACEHOLDER: 2-3 sentences — what it's about, what makes it interesting, maybe why you wrote it. don't try to sell it, just describe it honestly. -->
-        <p class="book-card__desc">
-          hier beschreibst du worum es im ersten buch geht, was es interessant macht, und vielleicht warum du es geschrieben hast. nicht versuchen zu verkaufen, einfach ehrlich beschreiben. zwei bis drei sätze die neugierig machen.
-        </p>
+  <section class="section section--buecher" id="buecher">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <h2 class="section__title">bücher</h2>
+        <p class="section__subtitle">vier bücher geschrieben. lesekreise wurden nicht gegründet.</p>
+        <div class="deco-fan"></div>
       </div>
 
-      <!-- BOOK 2 -->
-      <div class="book-card reveal" id="book-2">
-        <div class="book-card__cover-wrap">
-          <div class="book-card__cover placeholder-img">[ cover 2 ]</div>
-        </div>
-        <h3 class="book-card__title">Titel des zweiten Buchs</h3>
-        <span class="book-card__genre">genre / kategorie</span>
-        <p class="book-card__desc">
-          hier beschreibst du worum es im zweiten buch geht. was ist die kernidee, warum hast du das geschrieben, und was macht es anders als andere bücher zu dem thema. zwei bis drei sätze, persönlich und direkt.
-        </p>
-      </div>
+      <div class="book-grid reveal-stagger">
 
-      <!-- BOOK 3 -->
-      <div class="book-card reveal" id="book-3">
-        <div class="book-card__cover-wrap">
-          <div class="book-card__cover placeholder-img">[ cover 3 ]</div>
+        <div class="book-card reveal" data-modal="book-1">
+          <div class="book-card__cover-wrap">
+            <div class="book-card__cover placeholder-img">[ cover 1 ]</div>
+          </div>
+          <h3 class="book-card__title">Titel des ersten Buchs</h3>
+          <span class="book-card__genre">genre / kategorie</span>
+          <span class="book-card__cta">mehr dazu ›</span>
         </div>
-        <h3 class="book-card__title">Titel des dritten Buchs</h3>
-        <span class="book-card__genre">genre / kategorie</span>
-        <p class="book-card__desc">
-          hier beschreibst du worum es im dritten buch geht und was dich dazu bewogen hat es zu schreiben. was wolltest du sagen, was war die these, und für wen hast du es eigentlich geschrieben. zwei bis drei sätze.
-        </p>
-      </div>
 
-      <!-- BOOK 4 -->
-      <div class="book-card reveal" id="book-4">
-        <div class="book-card__cover-wrap">
-          <div class="book-card__cover placeholder-img">[ cover 4 ]</div>
+        <div class="book-card reveal" data-modal="book-2">
+          <div class="book-card__cover-wrap">
+            <div class="book-card__cover placeholder-img">[ cover 2 ]</div>
+          </div>
+          <h3 class="book-card__title">Titel des zweiten Buchs</h3>
+          <span class="book-card__genre">genre / kategorie</span>
+          <span class="book-card__cta">mehr dazu ›</span>
         </div>
-        <h3 class="book-card__title">Titel des vierten Buchs</h3>
-        <span class="book-card__genre">genre / kategorie</span>
-        <p class="book-card__desc">
-          hier beschreibst du worum es im vierten buch geht. das neuste, das aktuellste, vielleicht das beste. was ist die story, was ist der punkt, und warum sollte man es lesen. zwei bis drei sätze.
-        </p>
-      </div>
 
+        <div class="book-card reveal" data-modal="book-3">
+          <div class="book-card__cover-wrap">
+            <div class="book-card__cover placeholder-img">[ cover 3 ]</div>
+          </div>
+          <h3 class="book-card__title">Titel des dritten Buchs</h3>
+          <span class="book-card__genre">genre / kategorie</span>
+          <span class="book-card__cta">mehr dazu ›</span>
+        </div>
+
+        <div class="book-card reveal" data-modal="book-4">
+          <div class="book-card__cover-wrap">
+            <div class="book-card__cover placeholder-img">[ cover 4 ]</div>
+          </div>
+          <h3 class="book-card__title">Titel des vierten Buchs</h3>
+          <span class="book-card__genre">genre / kategorie</span>
+          <span class="book-card__cta">mehr dazu ›</span>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- ======== WAS MICH INTERESSIERT ======== -->
-  <section class="section section--alt" id="interessen">
-    <div class="section__header reveal">
-      <h2 class="section__title">was mich interessiert</h2>
-      <p class="section__subtitle">die themen über die ich nachdenke, auch wenn mich niemand fragt</p>
-      <div class="deco-fan"></div>
-    </div>
+  <section class="section section--interessen" id="interessen">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <h2 class="section__title">was mich interessiert</h2>
+        <p class="section__subtitle">die themen über die ich nachdenke, auch wenn mich niemand fragt</p>
+        <div class="deco-fan"></div>
+      </div>
 
-    <div class="interests">
       <div class="interest-tiles reveal-stagger">
 
-        <!-- INTEREST 1 -->
-        <div class="interest-tile reveal" id="interest-1">
-          <!-- PLACEHOLDER: pick an emoji that fits -->
+        <div class="interest-tile reveal" data-modal="interest-1">
           <span class="interest-tile__icon">◆</span>
-          <!-- PLACEHOLDER: name of the interest/topic -->
           <h3 class="interest-tile__title">Erstes Interessensgebiet</h3>
-          <!-- PLACEHOLDER: a full paragraph explaining why this topic fascinates you. what draws you to it, what you've learned, why it matters to you. write like you're explaining it to a friend who's mildly curious. ~3-4 sentences. -->
-          <p class="interest-tile__desc">
-            hier erklärst du warum dieses thema dich fasziniert. was zieht dich daran an, was hast du darüber gelernt, warum ist es dir wichtig. schreib so als würdest du es einem freund erklären der halbwegs neugierig ist. drei bis vier sätze die zeigen dass du dich wirklich damit beschäftigst und nicht nur so tust als ob.
-          </p>
+          <!-- PLACEHOLDER: 1 satz teaser — worum geht es, ganz kurz -->
+          <p class="interest-tile__teaser">ein kurzer satz der neugierig macht und zeigt worum es bei diesem thema geht ohne zu viel zu verraten</p>
         </div>
 
-        <!-- INTEREST 2 -->
-        <div class="interest-tile reveal" id="interest-2">
+        <div class="interest-tile reveal" data-modal="interest-2">
           <span class="interest-tile__icon">◆</span>
           <h3 class="interest-tile__title">Zweites Interessensgebiet</h3>
-          <p class="interest-tile__desc">
-            hier erklärst du ein weiteres thema das dich beschäftigt. was fasziniert dich daran, wie bist du dazu gekommen, und was denkst du darüber. drei bis vier sätze die persönlich sind und zeigen wie du tickst und über dinge nachdenkst die andere vielleicht nicht so auf dem schirm haben.
-          </p>
+          <p class="interest-tile__teaser">ein kurzer satz der neugierig macht und zeigt worum es bei diesem thema geht ohne zu viel zu verraten</p>
         </div>
 
-        <!-- INTEREST 3 -->
-        <div class="interest-tile reveal" id="interest-3">
+        <div class="interest-tile reveal" data-modal="interest-3">
           <span class="interest-tile__icon">◆</span>
           <h3 class="interest-tile__title">Drittes Interessensgebiet</h3>
-          <p class="interest-tile__desc">
-            und hier kommt noch ein thema das dir wichtig ist oder über das du gerne nachdenkst. warum genau dieses thema, was hast du daraus mitgenommen, und wie beeinflusst es deine arbeit oder dein denken. drei bis vier sätze, locker geschrieben, aber mit substanz und einer klaren meinung.
-          </p>
+          <p class="interest-tile__teaser">ein kurzer satz der neugierig macht und zeigt worum es bei diesem thema geht ohne zu viel zu verraten</p>
         </div>
 
-        <!-- INTEREST 4 -->
-        <div class="interest-tile reveal" id="interest-4">
+        <div class="interest-tile reveal" data-modal="interest-4">
           <span class="interest-tile__icon">◆</span>
           <h3 class="interest-tile__title">Viertes Interessensgebiet</h3>
-          <p class="interest-tile__desc">
-            hier kommt das vierte thema. vielleicht was unerwartetes, was man nicht sofort von dir erwartet, oder was was eine ganz andere seite von dir zeigt. drei bis vier sätze die zeigen dass du ein breites spektrum hast und nicht nur über eine sache nachdenken kannst.
-          </p>
+          <p class="interest-tile__teaser">ein kurzer satz der neugierig macht und zeigt worum es bei diesem thema geht ohne zu viel zu verraten</p>
         </div>
 
-        <!-- INTEREST 5 -->
-        <div class="interest-tile reveal" id="interest-5">
+        <div class="interest-tile reveal" data-modal="interest-5">
           <span class="interest-tile__icon">◆</span>
           <h3 class="interest-tile__title">Fünftes Interessensgebiet</h3>
-          <p class="interest-tile__desc">
-            und noch eins. das letzte für jetzt, aber vielleicht das spannendste. was ist es, warum ist es dir wichtig, und was hast du darüber zu sagen. drei bis vier sätze, zum schluss, die einen guten eindruck hinterlassen und zeigen dass du ein vielseitiger mensch bist.
-          </p>
+          <p class="interest-tile__teaser">ein kurzer satz der neugierig macht und zeigt worum es bei diesem thema geht ohne zu viel zu verraten</p>
         </div>
 
-        <!-- INTEREST 6 -->
-        <div class="interest-tile reveal" id="interest-6">
+        <div class="interest-tile reveal" data-modal="interest-6">
           <span class="interest-tile__icon">◆</span>
           <h3 class="interest-tile__title">Sechstes Interessensgebiet</h3>
-          <p class="interest-tile__desc">
-            hier steht ein weiteres thema das dir am herzen liegt oder das dich antreibt und inspiriert. erzähl was darüber, warum es dich packt und was du davon gelernt hast. drei bis vier sätze die einen runden abschluss bilden für diese sektion.
-          </p>
+          <p class="interest-tile__teaser">ein kurzer satz der neugierig macht und zeigt worum es bei diesem thema geht ohne zu viel zu verraten</p>
         </div>
 
       </div>
@@ -409,17 +408,272 @@
 
   <!-- ======== FOOTER ======== -->
   <footer class="footer" id="footer">
-    <div class="deco-divider">
-      <div class="deco-divider__diamond"></div>
-    </div>
-    <p class="footer__text">robert bernhardt · 2025</p>
+    <div class="deco-divider"><div class="deco-divider__diamond"></div></div>
+    <p class="footer__text">robert bernhardt · 2026</p>
     <div class="footer__links">
-      <!-- PLACEHOLDER: replace with your actual links -->
       <a href="#" class="footer__link" id="link-email">e-mail</a>
       <a href="#" class="footer__link" id="link-linkedin">linkedin</a>
       <a href="#" class="footer__link" id="link-github">github</a>
     </div>
   </footer>
+
+  <!-- ======== MODAL OVERLAY (single instance, filled by JS) ======== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <span class="deco-corner deco-corner--tl"></span>
+      <span class="deco-corner deco-corner--tr"></span>
+      <button class="modal__close" id="modal-close" aria-label="schließen">✕</button>
+      <div class="modal__image-wrap" id="modal-image-wrap">
+        <div class="modal__image placeholder-img" id="modal-image">[ bild ]</div>
+      </div>
+      <div class="modal__body" id="modal-body">
+        <!-- filled dynamically by JS -->
+      </div>
+      <span class="deco-corner deco-corner--bl"></span>
+      <span class="deco-corner deco-corner--br"></span>
+    </div>
+  </div>
+
+  <!-- ======== MODAL CONTENT DATA (hidden, used by JS) ======== -->
+  <script type="application/json" id="modal-data">
+  {
+    "startup-1": {
+      "label": "startup nº 1 · 20xx–20xx",
+      "title": "Name des ersten Startups",
+      "image": null,
+      "blocks": [
+        {
+          "type": "problem",
+          "label": "das problem",
+          "text": "hier beschreibst du das problem das dein startup lösen wollte. was war kaputt, was hat dich genervt, was hast du gesehen was andere nicht gesehen haben. zwei bis drei sätze die das ding auf den punkt bringen."
+        },
+        {
+          "type": "solution",
+          "label": "mein ansatz",
+          "text": "hier beschreibst du deine lösung und deinen ansatz. was war clever daran, was hat es einzigartig gemacht. zwei bis drei sätze die zeigen wie du an das problem rangegangen bist und was du anders gemacht hast."
+        },
+        {
+          "type": "neutral",
+          "label": "was passiert ist",
+          "text": "und hier steht was passiert ist und was du daraus gelernt hast. ehrlich, nicht verbittert, einfach die wahrheit. ein bis zwei sätze."
+        }
+      ]
+    },
+    "startup-2": {
+      "label": "startup nº 2 · 20xx–20xx",
+      "title": "Name des zweiten Startups",
+      "image": null,
+      "blocks": [
+        {
+          "type": "problem",
+          "label": "das problem",
+          "text": "hier beschreibst du das problem das dein zweites startup lösen wollte. was war die situation, was hat nicht funktioniert im markt, was hat dich dazu gebracht das ganze anzugehen. zwei bis drei sätze."
+        },
+        {
+          "type": "solution",
+          "label": "mein ansatz",
+          "text": "hier beschreibst du deine lösung und deinen ansatz beim zweiten startup. was war die idee, wie wolltest du das umsetzen, und was war der kern der innovation. zwei bis drei sätze."
+        },
+        {
+          "type": "neutral",
+          "label": "was passiert ist",
+          "text": "und hier steht was passiert ist und was du gelernt hast. vielleicht auch was du heute anders machen würdest. ein bis zwei sätze, ehrlich und reflektiert."
+        }
+      ]
+    },
+    "project-1": {
+      "label": "projekt",
+      "title": "Name des ersten Projekts",
+      "image": null,
+      "blocks": [
+        {
+          "type": "problem",
+          "label": "die ausgangslage",
+          "text": "hier beschreibst du die ausgangslage. was war das problem oder die herausforderung, was hat dich gestört, welche gelegenheit hast du gesehen. zwei bis drei sätze die den kontext geben, so dass man versteht warum das projekt nötig war."
+        },
+        {
+          "type": "solution",
+          "label": "was ich gemacht habe",
+          "text": "hier beschreibst du was du gemacht hast. deine lösung, was kreativ oder clever daran war. zwei bis drei sätze die zeigen wie du das problem angegangen bist und was dabei rausgekommen ist."
+        }
+      ]
+    },
+    "project-2": {
+      "label": "projekt",
+      "title": "Name des zweiten Projekts",
+      "image": null,
+      "blocks": [
+        {
+          "type": "problem",
+          "label": "die ausgangslage",
+          "text": "hier beschreibst du die ausgangslage für das zweite projekt. was war los, was musste sich ändern, was hat gefehlt. zwei bis drei sätze fürs verständnis des kontexts, nicht zu viel, nicht zu wenig."
+        },
+        {
+          "type": "solution",
+          "label": "was ich gemacht habe",
+          "text": "hier beschreibst du deine lösung für das zweite projekt. was hast du gebaut, designt oder umgesetzt. was war dein ansatz und was hat es besonders gemacht. zwei bis drei sätze und dann war's das."
+        }
+      ]
+    },
+    "project-3": {
+      "label": "projekt",
+      "title": "Name des dritten Projekts",
+      "image": null,
+      "blocks": [
+        {
+          "type": "problem",
+          "label": "die ausgangslage",
+          "text": "hier beschreibst du die ausgangslage für das dritte projekt. was lag im argen, was hat gefehlt, was wolltest du besser machen. zwei bis drei sätze die zeigen wo du angesetzt hast und warum es wichtig war."
+        },
+        {
+          "type": "solution",
+          "label": "was ich gemacht habe",
+          "text": "hier beschreibst du was du beim dritten projekt gemacht hast. dein ansatz, deine lösung, und was am ende dabei rauskam. zwei bis drei sätze, konkret und auf den punkt gebracht, ohne zu viel blabla."
+        }
+      ]
+    },
+    "book-1": {
+      "label": "buch",
+      "title": "Titel des ersten Buchs",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "genre / kategorie",
+          "text": ""
+        },
+        {
+          "type": "neutral",
+          "label": "worum es geht",
+          "text": "hier beschreibst du worum es im ersten buch geht, was es interessant macht, und vielleicht warum du es geschrieben hast. nicht versuchen zu verkaufen, einfach ehrlich beschreiben. drei bis vier sätze die neugierig machen und zeigen was die kernidee ist und warum sie dich beschäftigt hat."
+        }
+      ]
+    },
+    "book-2": {
+      "label": "buch",
+      "title": "Titel des zweiten Buchs",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "genre / kategorie",
+          "text": ""
+        },
+        {
+          "type": "neutral",
+          "label": "worum es geht",
+          "text": "hier beschreibst du worum es im zweiten buch geht. was ist die kernidee, warum hast du das geschrieben, und was macht es anders als andere bücher zu dem thema. drei bis vier sätze, persönlich und direkt, ohne verkaufssprache."
+        }
+      ]
+    },
+    "book-3": {
+      "label": "buch",
+      "title": "Titel des dritten Buchs",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "genre / kategorie",
+          "text": ""
+        },
+        {
+          "type": "neutral",
+          "label": "worum es geht",
+          "text": "hier beschreibst du worum es im dritten buch geht und was dich dazu bewogen hat es zu schreiben. was wolltest du sagen, was war die these, und für wen hast du es eigentlich geschrieben. drei bis vier sätze."
+        }
+      ]
+    },
+    "book-4": {
+      "label": "buch",
+      "title": "Titel des vierten Buchs",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "genre / kategorie",
+          "text": ""
+        },
+        {
+          "type": "neutral",
+          "label": "worum es geht",
+          "text": "hier beschreibst du worum es im vierten buch geht. das neuste, das aktuellste, vielleicht das beste. was ist die story, was ist der punkt, und warum sollte man es lesen. drei bis vier sätze."
+        }
+      ]
+    },
+    "interest-1": {
+      "label": "interessensgebiet",
+      "title": "Erstes Interessensgebiet",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "warum mich das fasziniert",
+          "text": "hier erklärst du warum dieses thema dich fasziniert. was zieht dich daran an, was hast du darüber gelernt, warum ist es dir wichtig. schreib so als würdest du es einem freund erklären der halbwegs neugierig ist. drei bis vier sätze die zeigen dass du dich wirklich damit beschäftigst und nicht nur so tust als ob."
+        }
+      ]
+    },
+    "interest-2": {
+      "label": "interessensgebiet",
+      "title": "Zweites Interessensgebiet",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "warum mich das fasziniert",
+          "text": "hier erklärst du ein weiteres thema das dich beschäftigt. was fasziniert dich daran, wie bist du dazu gekommen, und was denkst du darüber. drei bis vier sätze die persönlich sind und zeigen wie du tickst und über dinge nachdenkst die andere vielleicht nicht so auf dem schirm haben."
+        }
+      ]
+    },
+    "interest-3": {
+      "label": "interessensgebiet",
+      "title": "Drittes Interessensgebiet",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "warum mich das fasziniert",
+          "text": "und hier kommt noch ein thema das dir wichtig ist oder über das du gerne nachdenkst. warum genau dieses thema, was hast du daraus mitgenommen, und wie beeinflusst es deine arbeit oder dein denken. drei bis vier sätze, locker geschrieben, aber mit substanz und einer klaren meinung."
+        }
+      ]
+    },
+    "interest-4": {
+      "label": "interessensgebiet",
+      "title": "Viertes Interessensgebiet",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "warum mich das fasziniert",
+          "text": "hier kommt das vierte thema. vielleicht was unerwartetes, was man nicht sofort von dir erwartet, oder was was eine ganz andere seite von dir zeigt. drei bis vier sätze die zeigen dass du ein breites spektrum hast und nicht nur über eine sache nachdenken kannst."
+        }
+      ]
+    },
+    "interest-5": {
+      "label": "interessensgebiet",
+      "title": "Fünftes Interessensgebiet",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "warum mich das fasziniert",
+          "text": "und noch eins. das letzte für jetzt, aber vielleicht das spannendste. was ist es, warum ist es dir wichtig, und was hast du darüber zu sagen. drei bis vier sätze, zum schluss, die einen guten eindruck hinterlassen und zeigen dass du ein vielseitiger mensch bist."
+        }
+      ]
+    },
+    "interest-6": {
+      "label": "interessensgebiet",
+      "title": "Sechstes Interessensgebiet",
+      "image": null,
+      "blocks": [
+        {
+          "type": "neutral",
+          "label": "warum mich das fasziniert",
+          "text": "hier steht ein weiteres thema das dir am herzen liegt oder das dich antreibt und inspiriert. erzähl was darüber, warum es dich packt und was du davon gelernt hast. drei bis vier sätze die einen runden abschluss bilden für diese sektion."
+        }
+      ]
+    }
+  }
+  </script>
 
   <script src="resources/javascript/main.js"></script>
 </body>
